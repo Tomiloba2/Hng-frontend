@@ -61,7 +61,6 @@ img {
     object-position: center;
     border-radius: 50%;
     border: 2px solid #ddd;
-    filter: brightness(1.5);
     box-shadow: var(--b-shadow);
 }
 
