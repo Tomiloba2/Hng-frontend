@@ -4,9 +4,9 @@
     --padding: 1rem;
     --margin: 1rem;
     --white: rgb(247, 234, 234);
-    --blue: #202aac;
+    --blue: #0a1afc;
     --black: #3d3c3c;
-    --red: #940303;
+    --red: #18ff3e;
     --font-family: Georgia;
     --font-size: 1rem;
     --font-size-large: 1.25rem;
@@ -24,8 +24,8 @@ body {
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
     font-family: var(--font-family);
 }
 
@@ -40,28 +40,16 @@ h5,h4 {
 
 main {
     width: 100%;
+    padding: 2rem;
     display: flex;
     gap: var(--padding);
     flex-flow: column;
-    padding: 1rem 3rem;
+    justify-content: center;
     box-shadow: var(--b-shadow);
     border: 1px;
 }
 
-.item1 {
-    width: 100%;
-    height: 30vh;
-    position: relative;
-    background-color: var(--red);
-    border-radius: var(--b-radius);
-    box-shadow: var(--b-shadow);
-}
-
 .img-wrapper {
-    position: absolute;
-    left: 50%;
-    bottom: -50%;
-    transform: translate(-50%, -5%);
     text-align: center;
     font-size: var(--font-size-xlarge);
 }
@@ -72,8 +60,9 @@ img {
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
-    border: 2px solid var(--black);
+    border: 2px solid #ddd;
     filter: brightness(1.5);
+    box-shadow: var(--b-shadow);
 }
 
 .username {
@@ -81,11 +70,10 @@ img {
 }
 .date-time{
     padding: var(--font-size-small);
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-large);
 }
 
 ul {
-    height: 60vh;
     list-style: none;
     display: flex;
     flex-flow: column;
@@ -95,11 +83,10 @@ ul {
 }
 
 li {
-    width: 70%;
+    width: 50%;
     border: 2px solid #ddd;
     border-radius: var(--b-radius);
     padding: var(--font-size-large);
-    box-shadow: var(--b-shadow);
 }
 
 li h5 {
