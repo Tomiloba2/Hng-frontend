@@ -10,7 +10,7 @@ function getCurrentDate() {
 }
 function getCurrentTime() {
     const date = new Date()
-    const currentTime = date.getUTCMilliseconds()
+    const currentTime = date.getTime()
     const displayDate = document.getElementById('time')
     displayDate.textContent = currentTime
     console.log(displayDate);
