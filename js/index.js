@@ -1,4 +1,5 @@
 const date = new Date()
+setInterval(getCurrentTime,100)
 
 function getCurrentDate() {
     const currentDate = date.toLocaleDateString(undefined, {
@@ -16,4 +17,3 @@ function getCurrentTime() {
     console.log(displayDate);
 }
 getCurrentDate()
-setInterval(getCurrentTime,1000)
